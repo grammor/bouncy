@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bouncy</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="Favicon.ico">	
+</head>
+<body>
+	<header>
+  	<div class="container">
+	 <nav>
+		<a class="logo" href="#"><img src="img/Bouncy.png"></a>
+		<ul class="menu">
+		  <li><a href="#">Hello</a></li>
+		  <li><a href="#">Portfolio</a></li>
+		  <li><a href="#">Learn</a></li>
+		  <li><a href="#">Contact</a></li>
+		</ul>
+	 </nav>
+ 	 </div>
+</header>
+	
+<main>
+	<section class="section--bg"
+			  style="background-image: url(img/bg1.jpg);">
+	 <div class="container">
+		<h1 class="title">We Are Code Cafe</h1>
+		<div class="subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</div>
+		<a href="#" class="btn"></a>
+	 </div>
+  </section>
+
+	<section class="portfolio">
+	 <div class="container">
+		<div class="portfolio__title">THE PORTFOLIO</div>
+		<div class="portfolio__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+		<ul class="portfolio__nav">
+			<li><a href="#">All Works</a></li>
+			<li><a href="#">Print</a></li>
+			<li><a href="#">Branding</a></li>
+			<li><a href="#">Web</a></li>
+			<li><a href="#">HTML</a></li>
+		</ul>
+	 </div>
+	 <div class="image-wrap">
+			<div class="images">
+				 <div class="image-sizer"></div>
+				 <div class="gutter-sizer"></div>
+				 	<img src="img/im1.jpg" alt="" class="image">
+				 	<img src="img/im2.jpg" alt="" class="image">
+				 	<img src="img/im3.jpg" class="image">
+				 	<img src="img/im12.jpg" class="image">
+				 	<img src="img/im4.jpg" class="image">
+				 	<img src="img/im5.jpg" class="image">
+				 	<img src="img/im6.jpg" class="image">
+				 	<img src="img/im7.jpg" class="image">
+				 	<img src="img/im8.jpg" class="image">
+				 	<img src="img/im9.jpg" class="image">
+				 	<img src="img/im10.jpg" class="image">
+				 	<img src="img/im11.jpg" class="image">
+				 </div>
+				</div>
+  </section>
+</main>
+
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script>
+	 $(document).ready(function () {
+	 $('#slider').slick({
+		 autoplay:true,
+		 arrows:false,
+		 infinite:true
+	 });
+
+	 var isotope = $('.images').isotope({
+	 	itemSelector: '.image',
+	 	percentPosition: true,
+
+	 	// layoutMode: 'masonry'
+	 	masonry:{
+	 		gutter: '.gutter-sizer',
+	 		columnWidth: '.image-sizer'
+	 	}
+	 });
+	});
+</script>
+</body>
+</html>
