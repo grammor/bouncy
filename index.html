@@ -37,29 +37,29 @@
 		<div class="portfolio__title">THE PORTFOLIO</div>
 		<div class="portfolio__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
 		<ul class="portfolio__nav">
-			<li><a href="#">All Works</a></li>
-			<li><a href="#">Print</a></li>
-			<li><a href="#">Branding</a></li>
-			<li><a href="#">Web</a></li>
-			<li><a href="#">HTML</a></li>
+			<li><a href="#" class="active" data-filter="*">All Works</a></li>
+			<li><a href="#" data-filter="print">Print</a></li>
+			<li><a href="#" data-filter="branding">Branding</a></li>
+			<li><a href="#" data-filter="web">Web</a></li>
+			<li><a href="#" data-filter="html">HTML</a></li>
 		</ul>
 	 </div>
 	 <div class="image-wrap">
 			<div class="images">
 				 <div class="image-sizer"></div>
 				 <div class="gutter-sizer"></div>
-				 	<img src="img/im1.jpg" alt="" class="image">
-				 	<img src="img/im2.jpg" alt="" class="image">
-				 	<img src="img/im3.jpg" class="image">
-				 	<img src="img/im12.jpg" class="image">
-				 	<img src="img/im4.jpg" class="image">
-				 	<img src="img/im5.jpg" class="image">
-				 	<img src="img/im6.jpg" class="image">
-				 	<img src="img/im7.jpg" class="image">
-				 	<img src="img/im8.jpg" class="image">
-				 	<img src="img/im9.jpg" class="image">
-				 	<img src="img/im10.jpg" class="image">
-				 	<img src="img/im11.jpg" class="image">
+				 	<img src="img/im1.jpg" alt="" class="image web branding">
+				 	<img src="img/im2.jpg" alt="" class="image print html">
+				 	<img src="img/im3.jpg" class="image html">
+				 	<img src="img/im12.jpg" class="image print web">
+				 	<img src="img/im4.jpg" class="image html">
+				 	<img src="img/im5.jpg" class="image branding">
+				 	<img src="img/im6.jpg" class="image html web">
+				 	<img src="img/im7.jpg" class="image branding">
+				 	<img src="img/im8.jpg" class="image web print">
+				 	<img src="img/im9.jpg" class="image web branding">
+				 	<img src="img/im10.jpg" class="image print">
+				 	<img src="img/im11.jpg" class="image html">
 				 </div>
 				</div>
   </section>
@@ -82,12 +82,21 @@
 	 	itemSelector: '.image',
 	 	percentPosition: true,
 
-	 	// layoutMode: 'masonry'
 	 	masonry:{
 	 		gutter: '.gutter-sizer',
 	 		columnWidth: '.image-sizer'
 	 	}
 	 });
+
+	 $('.portfolio__nav a').on('click', function(e){
+	 	$('.portfolio__nav li').removeClass('active');
+	 	$(this).parent().addClass('active');
+	 	e.preventDefault();
+	 	var filter = $(this).attr('data-filter');
+	 	filter = filter == '*' ? filter : '.' +filter;
+	 	isotope.isotope({ filter : filter});
+	 });
+
 	});
 </script>
 </body>
