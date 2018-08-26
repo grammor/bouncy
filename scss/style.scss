@@ -15,7 +15,7 @@ body {
 	color: #fff;
 }
 .container {
-	width: 1170px;
+	width: 86%;
 	margin: 0 auto;
 }
 .section {
@@ -131,6 +131,7 @@ nav {
   color: #333B46;
   letter-spacing: 2px;
   margin-bottom: 4.5rem;
+  text-transform: uppercase;
 }
 .portfolio__subtitle{
   width: 47rem;
@@ -187,4 +188,56 @@ nav {
 .image {
   width: 23%;
   margin-bottom: 1rem;
+}
+.author {
+  text-align: center;
+}
+.slider {
+  position: relative;
+  margin-bottom: 5vh;
+  .slide {
+    //height: 100vh;
+    padding: 5vh 0;
+    text-align: center;
+    &-img, &-text {
+      display: inline-block;
+    }
+    &-text {
+      margin-left: 400px;
+      width: 370px;
+      text-align: right;
+      color: #81868E;
+      &--position {
+        text-align: left;
+        width: 770px;
+        margin-left: 60px;
+      }
+      &-title {
+        border-right: 4px solid #19bd9a;
+        padding-right: 40px;
+        &--border {
+          border: none;
+          margin-top: 30px;
+        }
+        h3 {
+          margin: 0;
+          font-size: 2rem;
+        }
+        &--color {
+          text-transform: uppercase;
+          color: #19bd9a;
+        }
+        span {
+          display: block;
+          margin-bottom: 20px;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+        }
+      }
+      &-subtitle {
+        padding-right: 40px;
+
+      }
+    }
+  }
 }

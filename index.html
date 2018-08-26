@@ -63,6 +63,86 @@
 				 </div>
 				</div>
   </section>
+  <section class="author">
+  	<div class="container">
+  		<h2 class="portfolio__title">
+  		THE TEAM
+  		</h2>
+        <div class="portfolio__subtitle">At vero eos et accusamus et iusto odio
+                dignissimos ducimus qui blanditiis praesentium
+        </div>
+
+         <div class="slider">
+            <div class="slide">
+                <div class="slide-img">
+                    <img src="img/borodach.jpg" alt="">
+                </div>
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        <h3>Abdullah Noman</h3>
+                        <span>Creative Director, Code Cafe</span>
+                    </div>
+                    <div class="slide-text-subtitle">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Animi beatae doloremque dolorum eos excepturi fuga fugit, itaque
+                        laudantium mollitia nisi nobis numquam quibusdam rem repellat rerum sint voluptate,
+                        voluptatem voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+                        deserunt facere ipsum iusto magni, nihil repudiandae rerum saepe similique voluptate!
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-img">
+                    <img src="img/borodach.jpg" alt="">
+                </div>
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        <h3>Abdullah Zahirf Fjdhdf Fgfg Noman</h3>
+                        <span>Creative Director, Code Cafe</span>
+                    </div>
+                    <div class="slide-text-subtitle">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Animi beatae doloremque dolorum eos excepturi fuga fugit, itaque
+                        laudantium mollitia nisi nobis numquam quibusdam rem repellat rerum sint voluptate,
+                        voluptatem voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+                        deserunt facere ipsum iusto magni, nihil repudiandae rerum saepe similique voluptate!
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-img">
+                    <img src="img/borodach.jpg" alt="">
+                </div>
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        <h3>Abdullah Dutnfj Noman</h3>
+                        <span>Creative Director, Code Cafe</span>
+                    </div>
+                    <div class="slide-text-subtitle">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Animi beatae doloremque dolorum eos excepturi fuga fugit, itaque
+                        laudantium mollitia nisi nobis numquam quibusdam rem repellat rerum sint voluptate,
+                        voluptatem voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+                        deserunt facere ipsum iusto magni, nihil repudiandae rerum saepe similique voluptate!
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-img">
+                    <img src="img/borodach.jpg" alt="">
+                </div>
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        <h3>Abdullah Dgkgkg Gkfjfjd Noman</h3>
+                        <span>Creative Director, Code Cafe</span>
+                    </div>
+                    <div class="slide-text-subtitle">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Animi beatae doloremque dolorum eos excepturi fuga fugit, itaque
+                        laudantium mollitia nisi nobis numquam quibusdam rem repellat rerum sint voluptate,
+                        voluptatem voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+                        deserunt facere ipsum iusto magni, nihil repudiandae rerum saepe similique voluptate!
+                    </div>
+                </div>
+            </div>
+  	</div>
+  </section>
 </main>
 
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -72,22 +152,21 @@
 <script src="js/isotope.pkgd.min.js"></script>
 <script>
 	 $(document).ready(function () {
-	 $('#slider').slick({
-		 autoplay:true,
-		 arrows:false,
-		 infinite:true
-	 });
-
+	 $('.slider').slick({
+            arrows: false,
+            dots: true,
+            infinite: false,
+            fade: true,
+            easing: 'ease-in'
+        });
 	 var isotope = $('.images').isotope({
 	 	itemSelector: '.image',
 	 	percentPosition: true,
-
 	 	masonry:{
 	 		gutter: '.gutter-sizer',
 	 		columnWidth: '.image-sizer'
 	 	}
 	 });
-
 	 $('.portfolio__nav a').on('click', function(e){
 	 	$('.portfolio__nav li').removeClass('active');
 	 	$(this).parent().addClass('active');
@@ -96,7 +175,6 @@
 	 	filter = filter == '*' ? filter : '.' +filter;
 	 	isotope.isotope({ filter : filter});
 	 });
-
 	});
 </script>
 </body>
