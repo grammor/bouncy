@@ -11,31 +11,31 @@
 	<header>
   	<div class="container">
 	 <nav>
-		<a class="logo" href="#"><img src="img/Bouncy.png"></a>
+		<a class="logo" href="#"><img alt="" src="img/Bouncy.png"></a>
 		<ul class="menu">
-		  <li><a href="#">Hello</a></li>
-		  <li><a href="#">Portfolio</a></li>
-		  <li><a href="#">Learn</a></li>
-		  <li><a href="#">Contact</a></li>
+		  <li class="active"><a href="#hello">Hello</a></li>
+		  <li><a href="#portfolio">Portfolio</a></li>
+		  <li><a href="#learn">Learn</a></li>
+		  <li><a href="#contact">Contact</a></li>
 		</ul>
 	 </nav>
  	 </div>
 </header>
 	
 <main>
-	<section class="section--bg"
+	<section class="section--bg" id="hello" 
 			  style="background-image: url(img/bg1.jpg);">
 	 <div class="container">
-		<h1 class="title">We Are Code Cafe</h1>
-		<div class="subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</div>
-		<a href="#" class="btn"></a>
+		<h1 class="first_title">We Are Code Cafe</h1>
+		<div class="first_subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</div>
+		<a href="#portfolio" class="btn"></a>
 	 </div>
   </section>
 
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 	 <div class="container">
-		<div class="portfolio__title">THE PORTFOLIO</div>
-		<div class="portfolio__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+		<div class="title">THE PORTFOLIO</div>
+		<div class="subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
 		<ul class="portfolio__nav">
 			<li><a href="#" class="active" data-filter="*">All Works</a></li>
 			<li><a href="#" data-filter="print">Print</a></li>
@@ -50,25 +50,25 @@
 				 <div class="gutter-sizer"></div>
 				 	<img src="img/im1.jpg" alt="" class="image web branding">
 				 	<img src="img/im2.jpg" alt="" class="image print html">
-				 	<img src="img/im3.jpg" class="image html">
-				 	<img src="img/im12.jpg" class="image print web">
-				 	<img src="img/im4.jpg" class="image html">
-				 	<img src="img/im5.jpg" class="image branding">
-				 	<img src="img/im6.jpg" class="image html web">
-				 	<img src="img/im7.jpg" class="image branding">
-				 	<img src="img/im8.jpg" class="image web print">
-				 	<img src="img/im9.jpg" class="image web branding">
-				 	<img src="img/im10.jpg" class="image print">
-				 	<img src="img/im11.jpg" class="image html">
+				 	<img alt="" src="img/im3.jpg" class="image html">
+				 	<img alt="" src="img/im12.jpg" class="image print web">
+				 	<img alt="" src="img/im4.jpg" class="image html">
+				 	<img alt="" src="img/im5.jpg" class="image branding">
+				 	<img alt="" src="img/im6.jpg" class="image html web">
+				 	<img alt="" src="img/im7.jpg" class="image branding">
+				 	<img alt="" src="img/im8.jpg" class="image web print">
+				 	<img alt="" src="img/im9.jpg" class="image web branding">
+				 	<img alt="" src="img/im10.jpg" class="image print">
+				 	<img alt="" src="img/im11.jpg" class="image html">
 				 </div>
 				</div>
   </section>
-  <section class="author">
+  <section class="author" id="learn">
   	<div class="container">
-  		<h2 class="portfolio__title">
+  		<div class="title">
   		THE TEAM
-  		</h2>
-        <div class="portfolio__subtitle">At vero eos et accusamus et iusto odio
+  		</div>
+        <div class="subtitle">At vero eos et accusamus et iusto odio
                 dignissimos ducimus qui blanditiis praesentium
         </div>
 
@@ -141,41 +141,113 @@
                     </div>
                 </div>
             </div>
-  	</div>
+    </div>
+  </section>
+  <section class="contact">
+      <div class="contact__title">Already Loved Us? Let’s talk!
+      </div>
+          <a href="#" class="button">Contact Us</a>
+  </section>
+  <section class="testimonials">
+      <div class="container">
+          <div class="title">Testimonials</div>
+          <div class="subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+       <div class="content">
+            <div class="slider">
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="img/ochkarik.jpg" alt="">
+                    </div>
+                    <div class="slide-text slide-text--position">
+                        <div class="slide-text-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                            blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+                            deserunt mollitia.
+                        </div>
+                        <div class="slide-text-title slide-text-title--border">
+                            <h3 class="slide-text-title--color">Partho</h3>
+                            <span>FOUNDER, ARTWAYS BD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="img/ochkarik.jpg" alt="">
+                    </div>
+                    <div class="slide-text slide-text--position">
+                        <div class="slide-text-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                            blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+                            deserunt mollitia.
+                        </div>
+                        <div class="slide-text-title slide-text-title--border">
+                            <h3 class="slide-text-title--color">Partho</h3>
+                            <span>FOUNDER, ARTWAYS BD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="img/ochkarik.jpg" alt="">
+                    </div>
+                    <div class="slide-text slide-text--position">
+                        <div class="slide-text-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                            blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+                            deserunt mollitia.
+                        </div>
+                        <div class="slide-text-title slide-text-title--border">
+                            <h3 class="slide-text-title--color">Partho</h3>
+                            <span>FOUNDER, ARTWAYS BD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="img/ochkarik.jpg" alt="">
+                    </div>
+                    <div class="slide-text slide-text--position">
+                        <div class="slide-text-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                            blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+                            deserunt mollitia.
+                        </div>
+                        <div class="slide-text-title slide-text-title--border">
+                            <h3 class="slide-text-title--color">Partho</h3>
+                            <span>FOUNDER, ARTWAYS BD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+  <section class="map" id="contact">
+      <div class="container">
+          <div class="title">Contact Us</div>
+          <div class="subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+      </div>
+      <div id="map"></div>
   </section>
 </main>
+<footer class="footer">
+    <a href="#" class="footer__logo"><img alt="" src="img/footer.jpg"></a>
+    <div class="subtitle">Copyright 2015. All rights Reserved</div>
+    <ul class="socials">
+        <li class="social"><a href="#"><img alt="" src="img/twit.png"></a></li>
+        <li class="social"><a href="#"><img alt="" src="img/face.png"></a></li>
+        <li class="social"><a href="#"><img alt="" src="img/linkedin.png"></a></li>
+        <li class="social"><a href="#"><img alt="" src="img/instagramm.png"></a></li>
+        <li class="social"><a href="#"><img alt="" src="img/vimeo.png"></a></li>
+    </ul>
+</footer>
 
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
-<script>
-	 $(document).ready(function () {
-	 $('.slider').slick({
-            arrows: false,
-            dots: true,
-            infinite: false,
-            fade: true,
-            easing: 'ease-in'
-        });
-	 var isotope = $('.images').isotope({
-	 	itemSelector: '.image',
-	 	percentPosition: true,
-	 	masonry:{
-	 		gutter: '.gutter-sizer',
-	 		columnWidth: '.image-sizer'
-	 	}
-	 });
-	 $('.portfolio__nav a').on('click', function(e){
-	 	$('.portfolio__nav li').removeClass('active');
-	 	$(this).parent().addClass('active');
-	 	e.preventDefault();
-	 	var filter = $(this).attr('data-filter');
-	 	filter = filter == '*' ? filter : '.' +filter;
-	 	isotope.isotope({ filter : filter});
-	 });
-	});
-</script>
+<script src="js/scripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQDEK_bp8E3TJz1Sg1VMqF7jn8J3Z7Haw&callback=initMap" async defer></script>
 </body>
 </html>
